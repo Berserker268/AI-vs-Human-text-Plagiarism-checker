@@ -3,7 +3,7 @@
 ## Dataset
 
 Download the dataset from Kaggle:
-- [Dataset Link](https://www.kaggle.com/datasets/shanegerami/ai-vs-human-text/data)
+- [Ai vs Human Text](https://www.kaggle.com/datasets/shanegerami/ai-vs-human-text/data)
 
 ### Quick Start
 ```bash
