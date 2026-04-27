@@ -17,10 +17,10 @@ This project explores whether AI-generated and human-written essays can be disti
 - **Target column:** `generated`
   - `0` = Human Written
   - `1` = AI Generated
----
+
 Download the dataset from Kaggle:
 - [Ai vs Human Text](https://www.kaggle.com/datasets/shanegerami/ai-vs-human-text/data)
-- 
+---
 ## 🔍 Features Engineered
 
 Using **spaCy**, **textstat**, and **NLTK**, the following stylometric features are extracted from each essay:
