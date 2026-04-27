@@ -1,5 +1,3 @@
-# AI-vs-Human-text-Plagiarism-checker
-
 ## Dataset
 
 Download the dataset from Kaggle:
