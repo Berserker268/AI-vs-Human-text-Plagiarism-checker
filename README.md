@@ -129,9 +129,9 @@ tqdm
 ```
 ai-text-detector/
 ├── AI_Text_Detector.ipynb   # Main notebook
-├── AI_Human.csv             # Dataset (not included)
-├── new_df_features.csv      # Exported feature dataset (generated)
-└── README.md
+├── README.md
+├── Report.pdf      # week 3 report
+└── Research Work.pdf     # week 2 report
 ```
 
 ---
