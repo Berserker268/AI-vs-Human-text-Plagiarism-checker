@@ -5,15 +5,6 @@
 Download the dataset from Kaggle:
 - [Ai vs Human Text](https://www.kaggle.com/datasets/shanegerami/ai-vs-human-text/data)
 
-### Quick Start
-```bash
-# Install Kaggle CLI
-pip install kaggle
-
-# Download dataset
-kaggle datasets download -d [dataset-id]
-unzip [dataset-name].zip
-```
 # 🤖 AI vs Human Text Detector
 
 A machine learning project that classifies text as either **AI-generated** or **Human-written** using stylometric and linguistic features — no vectorization, no embeddings, just writing patterns.
@@ -145,4 +136,10 @@ ai-text-detector/
 
 ---
 
+## 🙋 Author
+
+**Berserker268**
+Made as part of CSE427 Lab Project.
+
+Feel free to fork, star ⭐, and contribute!
 
