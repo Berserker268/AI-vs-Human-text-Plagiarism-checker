@@ -1,8 +1,3 @@
-## Dataset
-
-Download the dataset from Kaggle:
-- [Ai vs Human Text](https://www.kaggle.com/datasets/shanegerami/ai-vs-human-text/data)
-
 # 🤖 AI vs Human Text Detector
 
 A machine learning project that classifies text as either **AI-generated** or **Human-written** using stylometric and linguistic features — no vectorization, no embeddings, just writing patterns.
@@ -22,7 +17,8 @@ This project explores whether AI-generated and human-written essays can be disti
 - **Target column:** `generated`
   - `0` = Human Written
   - `1` = AI Generated
-
+Download the dataset from Kaggle:
+- [Ai vs Human Text](https://www.kaggle.com/datasets/shanegerami/ai-vs-human-text/data)
 ---
 
 ## 🔍 Features Engineered
