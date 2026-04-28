@@ -50,7 +50,7 @@ Key insight: AI tends to produce **consistent, predictable sentence lengths** (l
 
 Six classifiers were trained and evaluated:
 
-| Model | Accuracy | F1 (Macro) |
+| Model | Accuracy | F1 Score |
 |---|---|---|
 | Logistic Regression | 87% | 0.86 |
 | SVM (LinearSVC) | 87% | 0.85 |
