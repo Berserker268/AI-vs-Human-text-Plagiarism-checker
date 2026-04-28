@@ -121,7 +121,8 @@ ai-text-detector/
 ├── Final Report.pdf   # week 4 report
 ├── README.md
 ├── Report.pdf      # week 3 report
-└── Research Work.pdf     # week 2 report
+├── Research Work.pdf     # week 2 report
+└── requirements.txt   # required libraries
 ```
 
 ---
