@@ -14,6 +14,8 @@ This project explores whether AI-generated and human-written essays can be disti
 
 - **Source:** `AI_Human.csv`
 - **Text column:** Essay text (human or AI generated)
+- **Size**: 487,235 essay samples
+- **Class distribution**: 62.7% Human / 37.3% AI
 - **Target column:** `generated`
   - `0` = Human Written
   - `1` = AI Generated
@@ -48,12 +50,14 @@ Key insight: AI tends to produce **consistent, predictable sentence lengths** (l
 
 Six classifiers were trained and evaluated:
 
-- Logistic Regression
-- Random Forest
-- Gradient Boosting
-- Linear SVM
-- XGBoost
-- Voting Ensemble (all of the above)
+| Model | Accuracy | F1 (Macro) |
+|---|---|---|
+| Logistic Regression | 87% | 0.86 |
+| SVM (LinearSVC) | 87% | 0.85 |
+| Gradient Boosting | 91% | 0.90 |
+| Voting Ensemble | 93% | 0.92 |
+| XGBoost | 94% | 0.94 |
+| **Random Forest** | **98%** | **0.98** |
 
 Models were also retrained with **regularization** (reduced depth, subsampling, L1/L2 penalties) and on a **reduced feature set** to combat overfitting.
 
@@ -114,6 +118,7 @@ tqdm
 ```
 ai-text-detector/
 ├── AI_Text_Detector.ipynb   # Main notebook
+├── Final Report.pdf   # week 4 report
 ├── README.md
 ├── Report.pdf      # week 3 report
 └── Research Work.pdf     # week 2 report
@@ -121,12 +126,22 @@ ai-text-detector/
 
 ---
 
-## 💡 Key Findings
+## 🔬 Key Findings
 
-- **Burstiness** and **entropy** are among the strongest discriminating features — humans write with more variable sentence lengths and less predictable word choices.
-- **Type-Token Ratio (TTR)** reveals AI's lower lexical diversity.
-- The **Ensemble model** combining all classifiers achieved the best overall performance.
-- Regularized Gradient Boosting and XGBoost reduced overfitting while maintaining competitive accuracy.
+- **Random Forest** is the best performer with 98% accuracy and only 442 false positives out of 97,447 test samples
+- **Burstiness** and **entropy** are the most theoretically grounded features — humans vary sentence length more and use less predictable vocabulary
+- **avg_word_len** emerged as the strongest single predictor in tree-based models
+- **Feature reduction** (dropping verb_density, ttr, noun_density, stopword) caused a 1% drop — all 12 features contribute complementary information
+- **No significant overfitting** detected — all models showed less than 2% gap between train and test accuracy
+- **Regularization** on Gradient Boosting and XGBoost successfully reduced avg_word_len dominance and distributed importance more evenly across features
+---
+
+## 📚 References
+
+- Bennet, M. (2025). Feature-Based Detection of AI-Generated Text. ResearchGate.
+- Masrour, E., Emi, B., & Spero, M. (2025). DAMAGE: Detecting Adversarially Modified AI Generated Text. GenAIDetect.
+- Wu, J. (2025). A Survey on LLM-Generated Text Detection. ACL Anthology.
+- Kaggle Dataset: https://www.kaggle.com/datasets/shanegerami/ai-vs-human-text
 
 ---
 
