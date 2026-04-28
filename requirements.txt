@@ -1,0 +1,10 @@
+pandas
+numpy
+scikit-learn
+xgboost
+spacy
+textstat
+nltk
+seaborn
+matplotlib
+tqdm
